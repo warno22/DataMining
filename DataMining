@@ -1,0 +1,43 @@
+df=pd.read_csv("tinggi..csv")
+df['Tinggi Badan'].describe()
+print("jumlah data",df['Tinggi Badan'].count())
+//jumlah data 99 
+from scipy import stats
+mode = stats.mode(df)
+print(mode)
+//ModeResult(mode=array([[162]], dtype=int64), count=array([[8]]))
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from scipy import stats
+
+df=pd.read_csv("tinggi..csv",usecols=[0])
+sns.distplot(df);
+//Diagram
+import numpy as ip
+import matplotlib.pyplot as mat
+from scipy import stats
+import pandas as data
+
+data.read_csv("warno.csv")
+//Menampilkan data
+import numpy as ip
+import seaborn as sea
+import matplotlib.pyplot as mat
+from scipy import stats
+import pandas as data
+
+cek = data.read_csv("warno.csv")
+mode = stats.mode(cek)
+print(mode)
+//ModeResult(mode=array([[199, 141,  21,  15]], dtype=int64), count=array([[2, 2, 5, 2]]))
+import numpy as ip
+import seaborn as sea
+import matplotlib.pyplot as mat
+from scipy import stats
+import pandas as data
+
+for i in range(3):
+    cek1=data.read_csv("warno.csv",usecols=[i])
+    sea.distplot(cek1);
+    // grafik
